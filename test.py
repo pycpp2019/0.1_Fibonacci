@@ -10,7 +10,12 @@ def fibonacci(n, cache={0: 0, 1: 1, 2: 1}):
         return fib
 
 def run_cpp(n):
-    res = subprocess.run(["./fibonacci", str(n)], input=(str(n) + "\n").encode("utf-8"), timeout=1.0, capture_output=True)
+    res = subprocess.run(
+        ["./fibonacci", str(n)],
+        input=(str(n) + "\n").encode("utf-8"),
+        stdout=subprocess.PIPE,
+        timeout=1.0,
+    )
     res.check_returncode()
     return int(res.stdout.split()[-1])
 
