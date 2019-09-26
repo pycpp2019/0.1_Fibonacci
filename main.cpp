@@ -6,8 +6,12 @@ int main(){
 	long long int num2=1;
 	long long int numres;
 	cin>>n;
-	if((n==1)||(n==0)){
-	cout<<0<<endl;	
+	if(n==0){
+		cout<<0<<endl;
+	}
+	else
+	if(n==1){
+		cout<<1<<endl;	
 	}
 	else{
 	
