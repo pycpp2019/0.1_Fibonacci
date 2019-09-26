@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 long long int fibonachi(int number){
-    long long int a = 0,b = 1;
+    long long int a = 1,b = 1;
     for(int i=0;i < number;i++){
         b = a + b;
         a = b - a;
