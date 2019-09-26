@@ -17,7 +17,7 @@ int main()
         }
     }else
     {
-        data[2]=data[i];
+        data[2]=data[i-1];
     }
     
     cout<<data[2]<<endl;
