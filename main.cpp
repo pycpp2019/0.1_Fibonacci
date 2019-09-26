@@ -30,6 +30,3 @@ int main() {
     cout << count(i) << endl;
     return 0;
 }
-
-//git config -- global user.name "Mona Lisa"
-//git config -- global user.email "monalisa@example.org"
