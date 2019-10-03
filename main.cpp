@@ -2,7 +2,7 @@
 using namespace std;
 
 long long int F(long long int n) {
-    long long int a = 0, b = 1, i;
+    long long int a = 1, b = 1, i;
     if (n <= 2) {
         return 1;
     } else {
