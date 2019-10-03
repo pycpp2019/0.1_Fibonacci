@@ -1,17 +1,22 @@
 #include <iostream>
 using namespace std;
 
-long long int F(long long int i) {
-    if (i<1) return 0;
-    if (i==1) return 1;
-    return F(i-1) + F(i-2);
+int F(int n) {
+    int a = 0, b = 1, i;
+    if (i <= 2) {
+        return 1;
+    } else {
+        for (i = 3; i <= n; i++) {
+            a = a + b;
+            b = a - b;
+        }
+        return a;
     }
+}
 
 int main() {
-long long int i;
-cin >> i;
-if (i < 80) {
-    cout << F(i) << endl;
-}
-return 0;
+    int n;
+    cin >> n;
+    cout << F(n) << endl;
+    return 0;
 }
